@@ -1,0 +1,276 @@
+/* Подключение шрифтов из гугл фонтс */
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap&subset=cyrillic-ext");
+
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P:regular&display=swap&subset=cyrillic-ext");
+
+/* Обнуляем стили */
+/* Обращаемся ко всему с помощью "*" */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* Эта новая штука, разберись  с ней */
+	box-sizing: border-box;
+}
+/* ТОчки стиля списков */
+li {
+	list-style: none;
+}
+/* Ссылки */
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+/* Заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/* Фантомный отступ у картинок */
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 100%;
+	color: #000;
+	padding: 0px;
+	font-family: Montserrat;
+}
+
+/* LESSON_07 */
+.body {
+	background-color: hotpink;
+	max-width: 1200px;
+	display: block;
+	margin: 0px auto;
+}
+
+.max {
+	font-size: 50px;
+	font-weight: 900;
+	color: honeydew;
+	text-shadow: 2px 5px 5px red;
+	text-align: center;
+	/* почему марджин такой ? */
+	margin: 10px 10px 10px 0px;
+	width: 1200px;
+	height: 300px;
+	background: greenyellow url(../img/bgw.jpg) 0 0 / cover no-repeat fixed;
+}
+.head {
+	display: block;
+	padding-top: 140px;
+}
+.repeat {
+	padding: 45px;
+	background-color: orange;
+	background-image: url(../img/pattern_face_border.jpg);
+	background-repeat: repeat;
+	margin-top: 10px;
+}
+.repeatx {
+	padding: 45px;
+	background-color: yellow;
+	background-image: url(../img/pattern_arrow.jpg);
+	background-repeat: repeat-x;
+	margin-top: 10px;
+}
+.repeatxc {
+	padding: 45px;
+	background-color: yellow;
+	background-image: url(../img/pattern_arrow.jpg);
+	background-repeat: repeat-x;
+	background-position: 0 50%;
+	margin-top: 10px;
+	/* background: greenyellow url(../img/pattern_arrow.jpg) 0 center / repeat-x; */
+}
+.repeaty {
+	padding: 45px;
+	background-color: yellow;
+	background-image: url(../img/pattern_arrow.jpg);
+	background-repeat: repeat-y;
+	margin-top: 10px;
+}
+.repeatyc {
+	padding: 45px;
+	background-color: yellow;
+	background-image: url(../img/pattern_arrow.jpg);
+	background-repeat: repeat-y;
+	background-position: 50% 0;
+	margin-top: 10px;
+	/* background: greenyellow url(../img/pattern_arrow.jpg) 0 center / repeat-x; */
+}
+.repeats {
+	padding: 45px;
+	background-color: yellow;
+	background-image: url(../img/pattern_plus.jpg);
+	background-repeat: space;
+	margin-top: 10px;
+}
+.repeatr {
+	padding: 45px;
+	background-color: yellow;
+	background-image: url(../img/pattern_face.jpg);
+	background-repeat: round;
+	margin-top: 10px;
+}
+.lgrad {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: linear-gradient(to bottom, yellow 0%, blue 50%, magenta 100%);
+
+	margin-top: 10px;
+}
+.rgrad {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: radial-gradient(ellipse at center, yellow 0%, blue 30%, magenta 70%);
+
+	margin-top: 10px;
+}
+.posl {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgb.jpg);
+	background-position: left;
+	margin-top: 10px;
+}
+.posr {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgb.jpg);
+	background-position: right;
+	margin-top: 10px;
+}
+
+.posc {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgb.jpg);
+	background-position: center;
+	margin-top: 10px;
+}
+.posperc {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgb.jpg);
+	background-position: 25% 100%;
+	margin-top: 10px;
+}
+.size {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgg.jpg);
+	background-position: 0 0;
+	background-size: 800px;
+	margin-top: 10px;
+}
+.sizecon {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgg.jpg);
+	background-position: 0 0;
+	background-size: contain;
+	margin-top: 10px;
+}
+.sizecov {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgg.jpg);
+	background-position: 0 0;
+	background-size: cover;
+	margin-top: 10px;
+}
+
+.scrolll {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgr.jpg);
+	background-position: 0 0;
+	background-size: cover;
+	background-attachment: scroll;
+	margin-top: 10px;
+}
+.fixed {
+	padding: 45px;
+	background-color: yellow;
+	background-repeat: no-repeat;
+	color: white;
+	background-image: url(../img/bgo.jpg);
+	background-position: 0 0;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 10px;
+}
+p {
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 40px;
+}
+.list {
+	margin-top: 10px;
+	padding: 45px;
+	font-weight: 700;
+	font-size: 20px;
+	text-shadow: 2px 2px 5px rgb(255, 0, 98), -2px -2px 5px black;
+	color: rgb(255, 255, 255);
+	background: url("../img/bgw.jpg") 0 0 / cover no-repeat;
+}
+li {
+	padding-left: 60px;
+	margin-top: 10px;
+	min-height: 30px;
+	background: url("../img/pattern_face_png.png") 0 0 / 30px no-repeat;
+}
+.button {
+	margin-top: 10px;
+	padding: 45px;
+	font-weight: 900;
+	font-size: 40px;
+	color: rgb(255, 255, 255);
+	background: url("../img/bgr.jpg") 0 0 / cover no-repeat;
+}
+a {
+	padding: 20px 20px;
+	display: block;
+	max-width: auto;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: yellow 2px 2px 2px;
+	text-align: center;
+	border-radius: 25px;
+
+	background: url("../img/bgw.jpg");
+	box-shadow: 2px 2px 2px 2px black;
+}
